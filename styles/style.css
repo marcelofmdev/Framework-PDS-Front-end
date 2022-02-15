@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+}
+
+.heading {
+    padding: 5px;
+    margin-left: 10px;
+    color: cornsilk;
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.feed-item {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.item-logo {
+    text-align: center;
+}
+
+.content {
+    padding-left: 10px;
+}
+
+.content * {
+    margin-bottom: 10px;
+}
+
+.content ul {
+    padding-left: 20px;
+}

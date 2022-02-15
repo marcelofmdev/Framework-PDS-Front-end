@@ -1,0 +1,65 @@
+[
+    {
+        "createdAt": "2022-02-02T00:26:48.272+00:00",
+        "id": 1,
+        "user": {
+            "createdAt": "2022-02-02T00:19:47.770+00:00",
+            "id": 1,
+            "name": "vini",
+            "userName": "vini",
+            "password": "123",
+            "tags": [
+                {
+                    "createdAt": "2021-02-01T03:00:00.000+00:00",
+                    "id": 1,
+                    "name": "teste"
+                },
+                {
+                    "createdAt": "2021-02-01T03:00:00.000+00:00",
+                    "id": 2,
+                    "name": "test2"
+                }
+            ],
+            "recommendableTags": [
+                {
+                    "createdAt": "2021-02-01T03:00:00.000+00:00",
+                    "id": 1,
+                    "name": "teste"
+                },
+                {
+                    "createdAt": "2021-02-01T03:00:00.000+00:00",
+                    "id": 2,
+                    "name": "test2"
+                }
+            ]
+        },
+        "tags": [
+            {
+                "createdAt": "2021-02-01T03:00:00.000+00:00",
+                "id": 1,
+                "name": "teste"
+            },
+            {
+                "createdAt": "2021-02-01T03:00:00.000+00:00",
+                "id": 2,
+                "name": "test2"
+            }
+        ],
+        "usersLikes": [],
+        "imageUrl": "",
+        "content": "teste",
+        "likes": 0,
+        "recommendableTags": [
+            {
+                "createdAt": "2021-02-01T03:00:00.000+00:00",
+                "id": 1,
+                "name": "teste"
+            },
+            {
+                "createdAt": "2021-02-01T03:00:00.000+00:00",
+                "id": 2,
+                "name": "test2"
+            }
+        ]
+    }
+]
