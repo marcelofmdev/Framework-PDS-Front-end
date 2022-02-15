@@ -15,6 +15,15 @@ body {
     font-weight: 700;
 }
 
+.heading ul {
+    list-style-type: none;
+}
+
+.heading ul li {
+    margin-inline-end: 10px;
+    display: inline;
+}
+
 .italic {
     font-style: italic;
 }

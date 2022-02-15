@@ -1,0 +1,14 @@
+body {
+    background-color: #90ADC6;
+}
+
+.heading {
+    padding: 5px;
+    margin-left: 10px;
+    color: #333652;
+    font-weight: 700;
+}
+
+.feed-item {
+    background-color: #E9EAEC;
+}

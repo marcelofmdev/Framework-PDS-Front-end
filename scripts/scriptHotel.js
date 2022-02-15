@@ -51,7 +51,7 @@ function renderResource(resource) {
     resourceName = '<h2>' + resource.name + '</h2>';
     resourceDescription = '<p>' + resource.description + '</p>';
 
-    resourceDistance = '<p>' + resource.distance + 'Km</p>';
+    resourceDistance = '<p>' + resource.distance.toFixed(0) + 'Km</p>';
 
     resourceTags = '<p class="italic">' + tagsToString(resource.tags) + '</p>';
 
