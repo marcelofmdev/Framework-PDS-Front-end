@@ -43,30 +43,19 @@ function tagsToString(tags) {
 }
 
 
-function renderPost(post) {
-    const postDiv = document.createElement('div');
-    postDiv.classList.add('feed-item');
-    postId = '<p class="italic">#' + post.id + '</p>';
-    postImg = '<img src="' + post.imageUrl + '" width="20%" height="20%">';
-    postContent = '<div class="content">' + post.content + '</div>';
-    postUser = '<p class="italic">por ' + post.user.name + '<p>';
+function renderBook(book) {
+    const bookDiv = document.createElement('div');
+    bookDiv.classList.add('feed-item');
+    bookId = '<p class="italic">#' + book.id + '</p>';
+    bookImg = '<img src="' + book.imageUrl + '" width="20%" height="20%">';
+    bookContent = '<div class="content">' + book.content + '</div>';
 
-    postTags = '<p class="italic">' + tagsToString(post.tags) + '</p>';
+    bookLikes = '<p>Likes: ' + book.likes + '</p>';
 
-    postDiv.innerHTML = postId + postImg + postContent + postUser + postTags;
-    document.querySelector('.feed-container').appendChild(postDiv);
-}
+    bookTags = '<p class="italic">' + tagsToString(book.tags) + '</p>';
 
-
-function renderResource(resource) {
-    const resourceDiv = document.createElement('div');
-    resourceDiv.classList.add('feed-item');
-    resourceId = '<p class="italic">#' + resource.id + '</p>';
-    resourceLogo = '<div class="item-logo"><img src="' + resource.logo + '" width="20%" height="20%" class="item-logo"></div>';
-    resourceName = '<h2>' + resource.name + '</h2>';
-    resourceDescription = '<p>' + resource.description + '</p>';
-    resourceDiv.innerHTML = resourceId + resourceLogo + resourceName + resourceDescription;
-    document.querySelector('.feed-container').appendChild(resourceDiv);
+    bookDiv.innerHTML = bookId + bookImg + bookContent + bookUser + bookTags;
+    document.querySelector('.feed-container').appendChild(bookDiv);
 }
 
 
@@ -102,12 +91,12 @@ function renderPage() {
     });
 
     if(!hasErrors) {
-        const postRequest = fetch('http://localhost:8080/api/recommendation/' + userIdQuery);
-        postRequest.then(response => response.json())
-        .then(postJson => {
-            for(let post of postJson) {
-                console.log(post);
-                renderPost(post);
+        const bookRequest = fetch('http://localhost:8080/api/recommendation/' + userIdQuery);
+        bookRequest.then(response => response.json())
+        .then(bookJson => {
+            for(let book of bookJson) {
+                console.log(book);
+                renderBook(book);
             }
         }).catch(error => {
             console.log(error);
